@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="./Assets/css/styles_base.css"/>
+    <link rel="stylesheet" href="./Assets/css/styles.css"/>
+    <script type="text/javascript" src="./Assets/js/scripts.js"></script>
+</head>
+<body>
+    <header class="width-100percent flex-column-center">
+        <img src="./Assets/img/logo.png" alt="" class="header_logo">
+    </header>
+    <main class="flex-column-start">
+        <select name="pokemon-name" id="pokemon-name" class="margin-top-md width-50percent" onchange="fetchPokemon(this)">
+            <option value="Selecciona">-Selecciona</option>
+        </select>
+        <label for="pokemon-name" class="font-weight-bold font-size-sm">Selecciona</label>
+        <div class="pokemon-info-container width-100percent flex-column-start overflow-y-auto">
+            <p class="pokemon-name-title font-weight-bold font-size-xl margin-top-md">Charmander</p>
+            <img src="./Assets/img/charmander.png" alt="" class="pokemon-img margin-top-sm padding-sm">
+            <p class="font-weight-bold font-size-md text-align-center margin-top-md hidden" id="habilidades-title">Habilidades</p>
+            <div class="pokemon-habilities-container flex-row-center flex-wrap margin-top-md"></div>
+        </div>
+    </main>
+    <footer class="flex-row-center">
+        <p class="font-weight-bold font-size-sm text-align-center">Alfonso Martínez, 2021.</p>
+        <img src="./Assets/img/icons8-Github.png" alt="Github icon" class="repositorio-button" onclick="goToRepo('https://github.com/alfmarmir10/Pokemon-API')">
+    </footer>
+</body>
+</html>
