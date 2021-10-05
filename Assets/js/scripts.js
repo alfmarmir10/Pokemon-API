@@ -24,7 +24,7 @@ function fetchPokemon(element){
     .then(promise => promise.json())
     .then(objPokemon => {
         console.log(objPokemon);
-        document.getElementsByClassName('pokemon-img')[0].src = objPokemon.sprites.front_default;
+        document.getElementsByClassName('pokemon-img')[0].src = objPokemon.sprites.other.dream_world.front_default;
         document.getElementsByClassName('pokemon-name-title')[0].innerText = capitalize(objPokemon.name);
         const habilitiesContainer = document.getElementsByClassName('pokemon-habilities-container')[0];
         habilitiesContainer.innerHTML = '';

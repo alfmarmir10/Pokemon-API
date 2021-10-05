@@ -22,13 +22,17 @@ footer{
     border-radius: 50%;
 }
 
+.select-input{
+    width: 50%;
+}
+
 .pokemon-info-container{
     height: 63vh;
 }
 
 .pokemon-img{
     width: 60%;
-    box-shadow: 0px 0px 3px 0px black;
+    /* box-shadow: 0px 0px 3px 0px black; */
     border-radius: 10px;
 }
 
@@ -43,4 +47,42 @@ footer{
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 700px){
+    .header_logo{
+        width: 60%;
+    }
+
+    .select-input{
+        width: 30%;
+    }
+
+    .pokemon-img{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .header_logo{
+        width: 20%;
+    }
+
+    .select-input{
+        width: 30%;
+    }
+
+    .pokemon-img{
+        width: 10%;
+    }
+
+    .habilityDescription{
+        padding: 1vw;
+    }
+
+    .repositorio-button{
+        width: 2vw;
+        height: 2vw;
+        margin-left: 5vw;
+    }
 }
